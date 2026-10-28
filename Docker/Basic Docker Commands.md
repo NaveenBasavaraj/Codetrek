@@ -51,6 +51,7 @@ docker stop <container_name>
 ## 5. Remove container permanently
 ```
 docker rm <container_name>
+docker rm <container_id1> <container_id2> <container_id3> ...
 ```
 ![alt text](image-2.png)
 
@@ -112,3 +113,14 @@ docker attach <container_id>
 > Ex: if container id is a043d40f85fe, specify only ```a043d```
 >
 > ```docker attach a043d```
+
+## 11. System Prune
+
+```
+docker system prune
+```
+Removes 
+- all containers
+- all networks not used by at least one container
+- all dangling images
+- ununsed build cache
